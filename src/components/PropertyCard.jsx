@@ -1,12 +1,18 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { FaBed, FaBath, FaRulerCombined, FaHeart, FaMapMarkerAlt } from 'react-icons/fa'
 
 const PropertyCard = ({ property }) => {
   const [favorited, setFavorited] = useState(false)
+  const navigate = useNavigate()
   
   const toggleFavorite = (e) => {
     e.preventDefault()
     setFavorited(!favorited)
+  }
+
+  const handleViewDetails = () => {
+    navigate(`/property/${property.id}`)
   }
 
   return (
@@ -59,12 +65,12 @@ const PropertyCard = ({ property }) => {
         
         {/* CTA */}
         <div className="flex space-x-2">
-          <a 
-            href="#" 
+          <button 
+            onClick={handleViewDetails}
             className="btn btn-primary flex-1 text-center"
           >
             View Details
-          </a>
+          </button>
           <a 
             href="#contact" 
             className="btn btn-outline flex-1 text-center"

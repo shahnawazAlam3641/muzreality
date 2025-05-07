@@ -1,5 +1,14 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaPhone, FaEnvelope } from 'react-icons/fa'
-import { Link } from 'react-scroll'
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+  FaPhone,
+  FaEnvelope,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -10,26 +19,42 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              <span className="font-playfair">MUZ</span> 
-              <span className="text-gold-500">Reality</span>
+              <span className="font-playfair">MUZ</span>
+              <span className="text-gold-500">Realty</span>
             </h3>
             <p className="mb-4 text-gray-400">
-              Your trusted partner in finding premium real estate properties in Kolkata. Experience excellence in property solutions.
+              Your trusted partner in finding premium real estate properties in
+              Kolkata. Experience excellence in property solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors duration-300"
+              >
                 <FaFacebookF />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors duration-300"
+              >
                 <FaTwitter />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors duration-300"
+              >
                 <FaInstagram />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors duration-300"
+              >
                 <FaLinkedinIn />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors duration-300"
+              >
                 <FaYoutube />
               </a>
             </div>
@@ -40,69 +65,119 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="hero" smooth={true} duration={500} className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                <ScrollLink
+                  to="hero"
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                >
                   Home
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link to="properties" smooth={true} duration={500} className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                <ScrollLink
+                  to="properties"
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                >
                   Properties
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link to="about" smooth={true} duration={500} className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                <ScrollLink
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                >
                   About Us
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link to="services" smooth={true} duration={500} className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                <ScrollLink
+                  to="services"
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                >
                   Services
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link to="testimonials" smooth={true} duration={500} className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                <ScrollLink
+                  to="testimonials"
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                >
                   Testimonials
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link to="contact" smooth={true} duration={500} className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                <ScrollLink
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                >
                   Contact
-                </Link>
+                </ScrollLink>
               </li>
             </ul>
           </div>
 
           {/* Property Types */}
           <div>
-            <h4 className="text-lg font-bold mb-4 text-white">Property Types</h4>
+            <h4 className="text-lg font-bold mb-4 text-white">
+              Property Types
+            </h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   Residential Apartments
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   Luxury Villas
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   Commercial Spaces
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   Office Buildings
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   Land & Plots
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   Rental Properties
                 </a>
               </li>
@@ -119,7 +194,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <FaEnvelope className="mt-1 mr-3 text-gold-500" />
-                <span className="text-gray-400">info@muzreality.com</span>
+                <span className="text-gray-400">info@MUZ Realty.com</span>
               </li>
               <li className="text-gray-400">
                 <p>Park Street, Kolkata</p>
@@ -133,23 +208,34 @@ const Footer = () => {
         <div className="pt-8 border-t border-gray-700 text-center md:flex md:justify-between md:text-left">
           <div className="mb-4 md:mb-0">
             <p className="text-gray-400">
-              © 2025 MUZ Reality. All rights reserved. <span className="text-gold-500">|</span> Md Muzammil, Sole Proprietor
+              © 2025 MUZ Realty. All rights reserved.{" "}
+              <span className="text-gold-500">|</span> Md Muzammil, Sole
+              Proprietor
             </p>
           </div>
           <div>
             <ul className="flex justify-center md:justify-end space-x-6">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <Link
+                  to="/privacy-policy"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <Link
+                  to="/terms-of-service"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   Sitemap
                 </a>
               </li>
@@ -158,7 +244,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,5 +1,3 @@
-import { FaSearch } from "react-icons/fa";
-
 const Hero = () => {
   return (
     <section id="hero" className="relative h-screen">
@@ -23,7 +21,7 @@ const Hero = () => {
           </h1>
           <p className="text-lg md:text-xl mb-8 text-gray-200 max-w-2xl">
             Luxury properties and premium real estate solutions tailored to your
-            lifestyle. Experience excellence with MUZ Reality.
+            lifestyle. Experience excellence with MUZ Realty.
           </p>
 
           {/* CTA Buttons */}
